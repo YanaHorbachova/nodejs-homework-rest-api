@@ -49,7 +49,7 @@ router.get('/:contactId', async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-})
+});
 
 router.post('/', validationCreateContact, async (req, res, next) => {
   try {
@@ -113,4 +113,4 @@ router.delete('/:contactId', async (req, res, next) => {
   }
 });
 
-module.exports = router
+module.exports = router;
