@@ -47,7 +47,7 @@ const updateContact = async (contactId, body) => {
   const contact = contactList.find(({ id }) => id === contactId);
   Object.assign(contact, body);
   await fs.writeFile(contactsPath, JSON.stringify(contactList, null, 2));
-  // return newContact;
+
   return contact;
 }
 
